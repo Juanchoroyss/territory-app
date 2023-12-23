@@ -1,0 +1,19 @@
+header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  border: 2px solid #15518a;
+  background-color: #1466b313;
+  text-align: center;
+  border-radius: 20px;
+  height: 150px;
+  margin-bottom: 50px;
+}
+header p {
+  color: #15518a;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}

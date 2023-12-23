@@ -1,0 +1,33 @@
+.tr--h2 {
+  text-align: center;
+  font-size: 30px;
+  margin: 0 0 50px;
+}
+.tr--img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: contain;
+}
+.tr--color-indicator {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10px;
+}
+.tr--color-indicator p {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.tr--color-indicator p:first-child::before,
+.tr--color-indicator p:last-child::before{
+  display: inline-block;
+  content: '';
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  border-radius: 5px;
+}
+.tr--color-indicator p:last-child::before {
+  background-color: green;
+}

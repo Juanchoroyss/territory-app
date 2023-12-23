@@ -1,16 +1,8 @@
-import { useState, useEffect } from 'react'
 import './styles/CardTerritory.css'
+import { Link, } from 'react-router-dom'
 
-const CardTerritory = () => {
-
-  const [ territories, setTerritories ] = useState([])
-
-  useEffect(() => {
-    fetch('http://localhost:3000/territories')
-    .then (response => response.json())
-    .then (data => setTerritories(data))
-  })
-
+const CardTerritory = ({territories}) => {
+  
   return (
     territories.map(territory => {
       const { territoryName, id } = territory
@@ -22,7 +14,7 @@ const CardTerritory = () => {
             <p className='card__letter'>{firstLetter}</p>
             <p className='card__p'>{territoryName}</p>
           </div>
-          <a className='card__aBtn' href={territoryName.toLowerCase()}>ver</a>
+          <Link className='card__aBtn'to={territoryName.toLowerCase()}>ver</Link>
         </div>
       )
     })
