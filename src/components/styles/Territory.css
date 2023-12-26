@@ -25,9 +25,34 @@
   content: '';
   width: 20px;
   height: 20px;
-  background-color: red;
+  background-color: #df5656;
   border-radius: 5px;
 }
 .tr--color-indicator p:last-child::before {
-  background-color: green;
+  background-color: #188521;
+}
+.tr--blocks-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: center;
+}
+.tr--text-block {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 40px auto 10px;
+}
+.tr__blocks {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #df5656;
+  cursor: pointer;
+}
+.tr__blocks.Active { 
+  background-color: #188521;
 }
