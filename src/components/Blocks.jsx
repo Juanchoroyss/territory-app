@@ -9,7 +9,6 @@ const Blocks = ({number, numPredicate}) => {
   }
   
   const addBlockPredicate = e => {
-    console.log(predicate)
     const thisBtn = e.target
     const numBtn = parseInt(thisBtn.textContent)
 
