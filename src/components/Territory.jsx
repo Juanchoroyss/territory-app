@@ -1,4 +1,5 @@
 import { Blocks } from "./Blocks"
+import { LabelIn } from "./LabelIn"
 import './styles/Territory.css'
 
 const Territory = ({props}) => {
@@ -19,14 +20,15 @@ const Territory = ({props}) => {
       </section>
       <section>
         <form>
-          <label htmlFor="date">
-            <span>Fecha en la que se predico</span>
-            <input type="date" id="date"/>
-          </label>
-          <label htmlFor="captain">
-            <span>Nombre del capitan</span>
-            <input id="captain" type="text" placeholder="Ej: Gonzalo Gutierrez"/>
-          </label>
+          <LabelIn 
+            type={'date'} 
+            text={'Fecha en la que se predico'}
+            id={'fecha'}
+          />
+          <LabelIn 
+            text={'Nombre del Capitan'}
+            id={'Captain'} 
+          />
           <section className="tr--all-blocks">
             <h2 className="tr--text-block">Manzanas del territorio</h2>
             <div className="tr--color-indicator">
