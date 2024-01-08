@@ -53,6 +53,6 @@
   background-color: #df5656;
   cursor: pointer;
 }
-.tr__blocks.Active { 
+.tr__blocks.active { 
   background-color: #188521;
 }

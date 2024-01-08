@@ -1,8 +1,8 @@
 import './styles/CardTerritory.css'
 import { Link, } from 'react-router-dom'
 
-const CardTerritory = ({territories}) => {
-  
+const CardTerritory = ({ territories }) => {
+
   return (
     territories.map(territory => {
       const { territoryName, id } = territory
@@ -14,7 +14,7 @@ const CardTerritory = ({territories}) => {
             <p className='card__letter'>{firstLetter}</p>
             <p className='card__p'>{territoryName}</p>
           </div>
-          <Link className='card__aBtn'to={territoryName.toLowerCase()}>ver</Link>
+          <Link className='card__aBtn' to={territoryName.toLowerCase()}>ver</Link>
         </div>
       )
     })
