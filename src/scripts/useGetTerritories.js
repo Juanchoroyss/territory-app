@@ -9,7 +9,7 @@ const useGetTerritories = url => {
     fetch(url)
     .then (response => response.json())
     .then (data => setTerritories(data))
-  })
+  }, [])
   return territories
 }
 
