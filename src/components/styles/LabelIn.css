@@ -1,0 +1,23 @@
+.ll--form {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 5px;
+  margin: 5px 0 20px;
+}
+.ll--span {
+  font-size: 20px;
+  font-weight: bold;
+  color: #3196f5;
+  text-transform: uppercase;
+}
+.ll--input {
+  border: none;
+  width: 100%;
+  margin: 5px 0;
+  background-color: #7d94aa6b;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 18px;
+  min-height: 40px;
+}
