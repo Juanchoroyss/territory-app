@@ -31,28 +31,3 @@
 .tr--color-indicator p:last-child::before {
   background-color: #188521;
 }
-.tr--blocks-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 5px;
-  justify-content: center;
-}
-.tr--text-block {
-  text-align: center;
-  font-size: 24px;
-  font-weight: 600;
-  margin: 40px auto 10px;
-}
-.tr__blocks {
-  width: 40px;
-  height: 40px;
-  border: none;
-  border-radius: 5px;
-  font-size: 18px;
-  font-weight: bold;
-  background-color: #df5656;
-  cursor: pointer;
-}
-.tr__blocks.active { 
-  background-color: #188521;
-}

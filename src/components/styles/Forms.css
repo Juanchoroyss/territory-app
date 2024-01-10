@@ -5,3 +5,30 @@
   border-radius: 10px;
   margin: 10px 0;
 }
+
+.tr--blocks-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 4px;
+  margin: 0 0 30px;
+}
+.tr--text-block {
+  font-size: 20px;
+  font-weight: bold;
+  color: #3196f5;
+  text-transform: uppercase;
+}
+.tr__blocks {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #df5656;
+  cursor: pointer;
+}
+.tr__blocks.active { 
+  background-color: #188521;
+}
