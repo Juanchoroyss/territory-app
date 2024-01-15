@@ -1,9 +1,8 @@
-import { useState } from "react";
 import { useLocalStorage } from "../customHooks/uselocalStorage";
 
 const Blocks = ({number, numPredicate}) => {
   
-  const [predicate, setPredicate] = useState([]);
+  const [predicate, setPredicate] = useLocalStorage(window.location.href, []);
   const blocks = Array(number).fill(null);
   if(predicate.length <= 0) {
     setPredicate(numPredicate)
@@ -18,7 +17,8 @@ const Blocks = ({number, numPredicate}) => {
       const removeNum = predicate.filter(num => num !== numBtn)
       setPredicate(removeNum)
     } else {
-      setPredicate([...predicate, numBtn])
+      const newPredicate = [...predicate, numBtn]
+      setPredicate(newPredicate)
     }
   }
   return(
