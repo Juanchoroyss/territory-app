@@ -1,5 +1,6 @@
 import './styles/Forms.css'
 import { Blocks } from './Blocks'
+import { Button } from './Button'
 import { LabelIn } from './LabelIn'
 
 const Form = ({territoryBlocks, predicate}) => {
@@ -32,6 +33,7 @@ const Form = ({territoryBlocks, predicate}) => {
           <span className='ll--span'>Observaciones</span>
           <textarea className='ll--input' id="observations" rows="8"></textarea>
         </label>
+        <Button />
       </div>
     </form>
   )
