@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useLocalStorage } from "../customHooks/uselocalStorage";
 
 const Blocks = ({number, numPredicate}) => {
   
@@ -7,8 +8,9 @@ const Blocks = ({number, numPredicate}) => {
   if(predicate.length <= 0) {
     setPredicate(numPredicate)
   }
-  
+
   const addBlockPredicate = e => {
+    e.preventDefault()
     const thisBtn = e.target
     const numBtn = parseInt(thisBtn.textContent)
 
