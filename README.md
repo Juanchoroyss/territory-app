@@ -1,8 +1,15 @@
-# React + Vite
+# Territory App <span style='font-size: 10px; padding: 8px 5px; background-color: #F95656; color: white; border-radius: 5px;'>DESARROLLO</span>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Territory App es un proyecto en desarrollo que tiene como objetivo llevar un control más completo sobre la manera en la que se abarca un territorio o los barrios de un lugar. La aplicación permitirá registrar de manera detallada quién estuvo a cargo de dichas manzanas, cuántas manzanas se abarcaron y la fecha en la que se hizo, además de comentarios adicionales. También incluirá un historial para llevar un registro de las actividades realizadas.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Para que Territory App funcione correctamente, es necesario descargar el backend desde el repositorio de GitHub y ejecutar el proyecto con el comando `npm run dev`**tanto en la carpeta territory-app como en la carpeta territory-app-db.**
+
+#### Pasos para descargar el backend
+
+1. Abre una terminal o consola de comandos.
+2. Dirígete a la carpeta donde deseas descargar el backend.
+3. Ejecuta el siguiente comando:
+`git clone https://github.com/Juanchoroyss/territory-app-db.git`
+4. Instala las dependencias con `npm i`
+5. Ejecuta el comando `npm run dev`
